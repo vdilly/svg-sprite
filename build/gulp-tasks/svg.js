@@ -24,7 +24,7 @@ module.exports = function(m) {
       .on("error", function(error) {
         console.log(error);
       })
-      .pipe(m.gulp.dest("../dist/sprites"));
+      .pipe(m.gulp.dest("./dist/sprites"));
   });
   m.gulp.task(
     "svg:watch",
