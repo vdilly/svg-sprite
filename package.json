@@ -1,0 +1,23 @@
+{
+  "name": "svg-sprite",
+  "version": "1.0.0",
+  "description": "Liste de SVG to svg sprite.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdilly/svg-sprite.git"
+  },
+  "author": "Vincent Dilly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdilly/svg-sprite/issues"
+  },
+  "homepage": "https://github.com/vdilly/svg-sprite#readme",
+  "devDependencies": {
+    "colors": "^1.3.3",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-plumber": "^1.2.0",
+    "gulp-svg-sprite": "^1.5.0"
+  }
+}
