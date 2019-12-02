@@ -1,9 +1,10 @@
 // @TODO : env.json variable wordpress ? pour le sprite.svg.php
 module.exports = function(m) {
   config = {
-    svg: { // General options for created SVG files
+    svg: {
+      // General options for created SVG files
       xmlDeclaration: false, // Add XML declaration to SVG sprite
-      doctypeDeclaration: false, // Add DOCTYPE declaration to SVG sprite
+      doctypeDeclaration: false // Add DOCTYPE declaration to SVG sprite
     },
     mode: {
       symbol: {
@@ -17,13 +18,13 @@ module.exports = function(m) {
   };
   m.gulp.task("svg", function() {
     return m.gulp
-      .src("**/*.svg", { cwd: "./src/img/svg" })
+      .src("**/*.svg", { cwd: "./src" })
       .pipe(m.plugins.plumber())
       .pipe(m.plugins.svgSprite(config))
       .on("error", function(error) {
         console.log(error);
       })
-      .pipe(m.gulp.dest("../images/sprites"));
+      .pipe(m.gulp.dest("../dist/sprites"));
   });
   m.gulp.task(
     "svg:watch",
